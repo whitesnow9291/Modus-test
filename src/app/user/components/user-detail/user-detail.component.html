@@ -1,0 +1,22 @@
+<div class="content">
+  <div class="user_detail">
+      <div class="user_photo">
+        <img [src] = "userdetail.picture.large" />
+      </div>
+      <div class="row">
+        <label>First Name : </label><span>{{ userdetail.firstName }}</span>
+      </div>
+      <div class="row">
+        <label>Last Name : </label><span>{{ userdetail.lastName }}</span>
+      </div>
+      <div class="row">
+        <label>Email : </label><span>{{ userdetail.email }}</span>
+      </div>
+      <div class="row">
+        <label>Phone : </label><span>{{ userdetail.phone }}</span>
+      </div>
+      <div class="row">
+        <a routerLink="/users"> Back </a>
+      </div>
+  </div>
+</div>

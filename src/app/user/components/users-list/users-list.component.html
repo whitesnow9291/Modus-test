@@ -1,0 +1,20 @@
+<div class="content">
+  <table class="user_list" cellspacing="0" cellpadding="0">
+    <thead>
+      <th>No</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let user of userData; let i = index" (click)="showUserDetail(i)">
+          <td>{{ i+1 }}</td>
+          <td>{{ user.firstName }}</td>
+          <td>{{ user.lastName }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.phone }}</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
